@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachi Hodiwala | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Prachi Hodiwala, a BSc IT student and Full Stack Developer from Gujarat, India. Responsive, user-focused web applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Prachi Hodiwala, home">PH<span>.</span></a>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch to light mode"><i class="fa-solid fa-sun"></i></button>
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HOME ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hello">Hello, I'm</p>
+          <h1>Prachi Hodiwala</h1>
+          <p class="typing-line" aria-live="polite"><span id="typing"></span><span class="cursor" aria-hidden="true">_</span></p>
+          <p class="hero-intro">Building clean, responsive and user-focused web experiences with modern web technologies.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <!-- Your CV goes in assets/resume.pdf -->
+            <a href="assets/resume.pdf" class="btn btn-ghost" download>Download CV</a>
+          </div>
+          <div class="socials">
+            <!-- TODO: replace both # with your GitHub and LinkedIn URLs -->
+            <a href="https://github.com/prachihodiwala" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/prachi-hodiwala-113b4b318/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Developer-themed visual: terminal card + floating badges -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="terminal">
+            <div class="term-bar"><i></i><i></i><i></i><span>prachi@developer:~$</span></div>
+            <pre class="term-body"><code><span class="l" style="--i:0"><b class="k">const</b> developer = {</span>
+<span class="l" style="--i:1">  name: <b class="s">"Prachi"</b>,</span>
+<span class="l" style="--i:2">  role: <b class="s">"Full Stack"</b>,</span>
+<span class="l" style="--i:3">  passion: <b class="s">"Web"</b></span>
+<span class="l" style="--i:4">};</span>
+<span class="l" style="--i:5"><b class="c">// ready to build</b><em class="caret"></em></span></code></pre>
+          </div>
+          <span class="badge b1">HTML</span><span class="badge b2">CSS</span><span class="badge b3">JS</span>
+          <span class="badge b4">Python</span><span class="badge b5">PHP</span><span class="badge b6">MySQL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container reveal">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a BSc IT student at Gujarat Technology University – Institute of Technology and Research (GTU-ITR) with a strong interest in Full Stack Development.</p>
+            <p>I enjoy building responsive, practical web applications, from the interface people use to the database behind it.</p>
+          </div>
+          <div class="info-cards">
+            <div class="glass info"><i class="fa-solid fa-graduation-cap"></i><div><h3>BSc IT</h3><p>GTU-ITR</p></div></div>
+            <div class="glass info"><i class="fa-solid fa-code"></i><div><h3>Full Stack Development</h3><p>Web Technologies</p></div></div>
+            <div class="glass info"><i class="fa-solid fa-location-dot"></i><div><h3>Based in</h3><p>Gujarat, India</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="container reveal">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="glass skill"><i class="fa-brands fa-html5"></i><h3>HTML</h3><p>Semantic and structured web development</p></div>
+          <div class="glass skill"><i class="fa-brands fa-css3-alt"></i><h3>CSS</h3><p>Responsive and modern UI design</p></div>
+          <div class="glass skill"><i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>Interactive web functionality</p></div>
+          <div class="glass skill"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Backend and application development</p></div>
+          <div class="glass skill"><i class="fa-brands fa-php"></i><h3>PHP</h3><p>Server-side web development</p></div>
+          <div class="glass skill"><i class="fa-solid fa-database"></i><h3>MySQL</h3><p>Database management</p></div>
+          <div class="glass skill"><i class="fa-brands fa-git-alt"></i><h3>Git</h3><p>Version control</p></div>
+          <div class="glass skill"><i class="fa-brands fa-github"></i><h3>GitHub</h3><p>Code hosting and collaboration</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container reveal">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="glass project featured">
+            <span class="p-num">01</span>
+            <h3>Personal Portfolio</h3>
+            <p>A modern and responsive personal portfolio website designed to showcase my skills, education, projects and professional profile.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="p-buttons">
+              <!-- TODO: replace # with real links -->
+              <a href="#" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </article>
+
+          <article class="glass project">
+            <span class="p-num">02</span>
+            <h3>Photography Studio Website</h3>
+            <p>A responsive photography studio website featuring an elegant design, photography gallery, services and studio information.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li></ul>
+            <div class="p-buttons">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </article>
+
+          <article class="glass project">
+            <span class="p-num">03</span>
+            <h3>Regional-Language Phishing SMS Reporting System</h3>
+            <p>A web-based system that allows users to report suspicious phishing SMS messages in regional languages and helps identify repeated threats through community-based reporting and blocklisting.</p>
+            <ul class="tags"><li>Python</li><li>Flask</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="p-buttons">
+              <a href="#" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="education">
+      <div class="container reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="glass edu">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h3>BSc in Information Technology (BSc IT)</h3>
+              <p>Gujarat Technology University – Institute of Technology and Research (GTU-ITR)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container reveal">
+        <h2 class="section-title">Let's build something together.</h2>
+        <p class="contact-cta">Have a project idea? Let's connect.</p>
+        <div class="contact-grid">
+          <!-- TODO: replace with your real email, GitHub and LinkedIn URLs -->
+          <a class="glass contact-card" href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i><h3>Email</h3><p>Send a message</p></a>
+          <a class="glass contact-card" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><h3>GitHub</h3><p>See my code</p></a>
+          <a class="glass contact-card" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i><h3>LinkedIn</h3><p>Connect with me</p></a>
+          <div class="glass contact-card static"><i class="fa-solid fa-location-dot"></i><h3>Location</h3><p>Gujarat, India</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>&copy; <span id="year"></span> Prachi Hodiwala. All rights reserved.</p></footer>
+  <button class="to-top" id="to-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
